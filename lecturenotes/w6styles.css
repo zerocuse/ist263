@@ -1,0 +1,11 @@
+h1 {color:cornflowerblue;
+    font-size: 180%;
+    font-family: Arial, Helvetica, sans-serif;}
+p {color: slategray;}
+a {color: darkseagreen;}
+
+/* this styles the id */
+#h1p2 {color:black;}
+
+/* this styles a class */
+.purpletext {color:blueviolet;}
