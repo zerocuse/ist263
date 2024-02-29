@@ -1,0 +1,9 @@
+body {background-color: #e9fbeb;}
+h1, h2, h3, h4 {color: #007A33;}
+h1:hover, h2:hover, h3:hover, h4:hover {color: #BA9653;}
+a {color: #007A33;}
+table {border-collapse: collapse; border: 1px solid black; line-height: 2rem; width: 55rem;}
+.evenrow {border-collapse: collapse; background-color: #d5fddd;}
+nav {width: 16vw; background-color: #d5fddd; border: solid black .04rem; padding: 15px; margin-bottom: 30px;}
+nav a {color:#007A33; padding: 15px;}
+nav a:hover {background-color: #0000001c;}
