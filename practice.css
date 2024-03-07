@@ -1,9 +1,11 @@
-html {font-size: 100%;}
+html {font-size: 100%}
 body {margin-left: 2rem; font-weight: lighter; font-family: sans-serif}
 tr:hover {background-color: rgb(219, 246, 219);}
-table {border-collapse: collapse; border: 1px solid rgb(201, 201, 201); width: 50rem; line-height: 2rem; text-align: center; font-size: 1rem}
+table {border-collapse: collapse; border: .05px solid rgb(201, 201, 201); width: 50rem; line-height: 2rem; text-align: center; font-size: 1rem}
 th a {font-weight: bold; color: black}
 .evenrow {background-color: whitesmoke}
 colgroup:hover {background-color: burlywood;}
 tr {border-bottom: solid rgb(201, 201, 201) .002em;}
-th {background-color: rgb(231, 231, 231);}
+th {background-color: rgb(231, 231, 231); border-bottom: .2rem dashed blue}
+a:focus {color: darkgreen}
+footer {background-color: blue}
