@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header img{
+    width: 100%;
+}
+
+nav {
+    margin: 5px auto;
+    width: 75%;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.navbox {
+    border: 1px solid black;
+    height: 20px;
+    width: 33.333%;
+}
+
+.navbox:hover {
+    background-color: darkgray;
+}
+
+.starter img {
+    width: 10em;
+}
+
+.bench-player img {
+    height: 3.5em;
+}
+
+.starter-container {
+    display: flex;
+    flex-direction: column;
+}
+.starter {
+    margin: 5px 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    transition: 400ms;
+}
+.bench-container {
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+}
+.bench-player {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 400ms;
+}
+.bench-player:hover, .starter:hover {
+    scale: 1.025;
+    background-color: darkgreen;
+    color: #fff;
+}
+hr {
+    width: 75%;
+    margin: 15px auto;
+    color: darkgreen;
+}
