@@ -87,6 +87,7 @@ svg{
     padding: 5px;
     margin: 25px;
     border-radius: 3rem;
+    text-align: center;
 }
 
 .col1, .col2 {
