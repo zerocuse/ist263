@@ -27,12 +27,12 @@
         function TryAgain() {
             document.getElementById("messages").innerHTML = 'Wrong shell, try again.';
         }
-        function ShuffleShells() {
+        function ShuffleShellFunc() {
             document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2)
         }
      </script>
 </head>
-<body onload="ShuffleShells()">
+<body onload="ShuffleShellFunc()">
     <h1>Choose a Walnut</h1>
     <div class="container">
         <img src="https://laferger.github.io/ist263/images/walnut.png" alt="first walnut" id="first" onclick="WinnerMessage()">
