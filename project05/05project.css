@@ -19,6 +19,9 @@ html {
 
 header {
     background-color: darkgreen;
+}
+
+#history-header {
     scroll-snap-align: start;
 }
 
