@@ -1,77 +1,148 @@
-*{
+* {
     margin: 0;
-    padding: 0;
+    font-family: sans-serif;
     text-align: center;
-    transition: .05s;
+    overflow-x: wrap;
 }
 
-header img{
+h1 {
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    color: rgb(6, 57, 6);
+    text-transform: uppercase;
+    border-bottom: 10px solid rgb(6, 57, 6);
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+header {
+    background-color: darkgreen;
+    scroll-snap-align: start;
+}
+
+header nav, header h1 {
+    padding: 10px;
+}
+
+.decade-row:nth-child(1) {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(Website-Images/celtics1950s.jfif);
+    background-size: cover;
+    background-position: top center
+}
+
+.decade-row:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(4, 101, 25, 0.5), rgba(4, 101, 25, 0.5)), url(Website-Images/jumperPic.jpeg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.decade-row:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(Website-Images/celticsCourt.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.decade-row:nth-child(4) {
+    background-image: linear-gradient(0deg, rgba(4, 101, 25, 0.5), rgba(4, 101, 25, 0.5)), url(Website-Images/larryBird.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.decade-row:nth-child(5) {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(Website-Images/celticsHeat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.decade-row:nth-child(6) {
+    background-image: linear-gradient(0deg, rgba(4, 101, 25, 0.5), rgba(4, 101, 25, 0.5)), url(Website-Images/kgDramatic.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+.decade-row:nth-child(7) {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(Website-Images/isaiahThomas.jpg);
+    background-position-x: center;
+    background-size: cover;
+}
+
+.decade-row:nth-child(8) {
+    background-image: linear-gradient(0deg, rgba(4, 101, 25, 0.5), rgba(4, 101, 25, 0.5)), url(Website-Images/jaylenBrown.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+.decade-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border-bottom: 10px solid rgb(6, 57, 6);
+    scroll-snap-align: start;
+}
+
+.decade-text {
+    margin: 15px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    background-color: #fff;
+    max-width: 80%;
+}
+
+.decade-row h2:nth-child(2), .decade-row-even h2:nth-child(2) {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: darkgreen;
+    margin: 5px 0 10px 0;
+}
+
+.decade-row h2:nth-child(1), .decade-row-even h2:nth-child(1) {
+    font-weight: 200;
+}
+
+header img {
     width: 100%;
 }
 
+header h1, nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
 nav {
-    margin: 5px auto;
-    width: 75%;
-    min-width: 300px;
+    background-color: rgb(6, 57, 6);
+    width: inherit;
     display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
+    justify-content: center;
+}
+
+.navbar {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbox {
-    border: 1px solid black;
-    height: 20px;
-    width: 33.333%;
+    width: inherit;
+    height: inherit;
+    padding: 5px;
+    margin: 0 2.5px 0 2.5px;
+    transition: .5s;
 }
 
 .navbox:hover {
-    background-color: darkgray;
+    background-color: rgb(255, 255, 255, 0.05);
+    border-radius: 10px;
+    scale: 1.10;
 }
 
-.starter img {
-    width: 10em;
+.evenrow {
+    background-color: gray;
 }
 
-.starter p {
-    display: none;
-}
-
-.starter:hover p {
-    display: block;
-}
-
-.bench-player img {
-    height: 3.5em;
-}
-
-.starter-container {
-    display: flex;
-    flex-direction: column;
-}
-.starter {
-    margin: 5px 20px;
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-}
-.bench-container {
-    justify-content: center;
-    display: flex;
-    flex-flow: wrap;
-}
-.bench-player {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 15px;
-}
-.bench-player:hover, .starter:hover {
-    scale: 1.025;
-    background-color: darkgreen;
-    color: #fff;
-}
-hr {
-    width: 75%;
-    margin: 15px auto;
-    color: darkgreen;
+.decade-row-even {
+    background-color: rgb(169, 206, 176, .5);
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JavaScript Program</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            cursor: pointer;
+        }
+        button {
+            color: #fff;
+            font-weight: bolder;
+            border: none;
+            padding: 5px;
+            background-color: black;
+        }
+    </style>
+    <script>
+        function clicky () {
+            if (document.getElementById("changer").style.backgroundColor == 'red') {
+                document.getElementById("changer").style.backgroundColor = 'black';
+            } else {
+                document.getElementById("changer").style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Classic First Javascript Program</h1>
+    <button id="changer" onclick="clicky()">AHHHHHH</button>
+</body>
+</html>

@@ -3,21 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 5 Index</title>
+    <title>Celtics History</title>
     <link rel="stylesheet" href="05project.css">
+    <style>
+        @media only screen and (max-width: 600px) {
+            .decade-text p {
+                display: none;
+            }
+            .decade-text h2 {
+                color: #000;
+                font-weight: lighter;
+                border-radius: 10px;
+            }
+            .decade-text h3 {
+                padding: 10px;
+            }
+        }
+        @media only screen and (min-width: 600px) {
+            .decade-text span {
+                display: none;
+            }
+        }
+    </style>
+    <script src="05project.js"></script>
 </head>
 <body>
-    <header><img src="/images/Website-Images/banner-index.jpg"></header>
-    <div class="subheader">
-        <nav>
-            <a href="index.html" class="navbox">Home</a>
-            <a href="icons.html" class="navbox">Icons</a>
-            <a href="roster.html" class="navbox">Roster</a>
-        </nav>
-    </div>
-
+    <header>
+        <img src="Website-Images/banner-index.jpg">
+        <div class="subheader">
+            <nav>
+                <div class="navbar">
+                    <a class="navbox" href="index.html">History</a>
+                    <a class="navbox" href="icons.html">Icons</a>
+                    <a class="navbox" href="roster.html">Roster</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <h1>Celtics History</h1>
     <main>
-        Jayson Tatum
+        <div class="decades-container">
+            <div class="decade-row" onclick="showInfo1()">
+                <div class="decade-text">
+                    <h2></h2>
+                    <h2>THE FOUNDING</h2>
+                    <span><h3>Click for Info</h3></span>
+                    <p id="info1">The Boston Celtics (pronounced sel-ticks) were founded as a team in the BBA (Basketball Association of America) on June 6, 1946, by Walter A. Brown. Brown was the Boston Garden-Arena Corporation President at the time, and had the team use the Boston Garden as their homecourt, which marks one of two teams in the NBA today to maintain the same arena throughout the history of the franchise. The Celtic name was used to represent the strong Irish population and passionate atmosphere of the city of Boston. The team was one of the 5 original NBA teams, and one of 2 to keep their original name today.</p>
+                </div>
+            </div>
+            <div class="decade-row" onclick="showInfo2()">
+                <div class="decade-text">
+                    <h2>1950s & 1960s</h2>
+                    <h2>BILL RUSSELL'S DOMINANCE</h2>
+                    <span><h3>Click for Info</h3></span>
+                    <p id="info2">The start of the Celtics franchise does not just include the phenomenon known as Bill Russell, Bill Russell WAS the beginning of the Celtics franchise. Alongside other notable Celtic greats such as Bob Cousy, Sam Jones, John Havlicek, and legendary coach Red Auerbach, the Celtics controlled the early NBA, winning 11 Championships under Russell that contained a stretch of 8-straight titles. Russell’s impact on the league is recognized in many different aspects, with the Finals MVP award being named in his honor, statues being built of him in Boston, his appearance at nearly every NBA Finals to present the NBA champions their awards, and his number 6 being retired leaguewide by the NBA in 2022. But Bill wasn’t just a dominant defensive presence in the league, but also a dominant figure in social justice at the time, Bill Russell’s impact goes beyond just sports</p>
+                </div>
+            </div>
+            <div class="decade-row">
+                <div class="decade-text" onclick="showInfo3()">
+                    <h2>1970s</h2>
+                    <h2>Different Forms of Success</h2>
+                    <span><h3>Click for Info</h3></span>
+                    <p id="info3">The Celtics of the 70s were a team that needed to establish a new identity post-Bill Russell. Although the success in the early days would be undeniably impossible to replicate, the organization still found ways to continue the winning culture of the franchise. Drafting future Hall-of-Famers in Dave Cowens and JoJo White to play behind veterans John Havlicek and Don Nelson, along with bringing in former player Tom Heinsohn as coach, the Celtics were able to string together two more NBA championships in the post-Russell era, and only add on to the culture of hardware that had been instituted from the beginning of the franchise.</p>
+                </div>
+            </div>
+            <div class="decade-row" onclick="showInfo4()">
+                <div class="decade-text">
+                    <h2>1980s</h2>
+                    <h2>Larry Legend</h2>
+                    <span><h3>Click for Info</h3></span>
+                    <p id="info4">With the 6th pick in the 1979 NBA Draft, the Boston Celtics selected a player who would go on to win 3 straight MVPs, 3 NBA Championships, and 9 All-NBA 1st team selections. That player was Larry Bird. With Larry at the helm, the Celtics made the playoffs EVERY season of the 80s and established an infamous rivalry with the Los Angeles Lakers. In fact, the rivalry between Boston’s Bird and Los Angeles’ Magic Johnson was so electric that it saved the league from the brink of bankruptcy during a time where the NBA was not maintaining enough revenue to stay afloat. Red Auerbach also orchestrated one of the best trades in franchise history in 1980, when he dealt two first-round draft picks to the Golden State Warriors for Robert Parish and the draft rights to Kevin McHale. The “original Big 3” of Bird, McHale, and Parish brought upon another stretch of pure dynastic dominance in the NBA, going toe-to-toe with other all-time greats such as Isiah Thomas, Julius Erving, Dominique Wilkins, and most notably, Michael Jordan.</p>
+                </div>
+            </div>
+            <div class="decade-row" onclick="showInfo5()">
+                <div class="decade-text">
+                    <h2>1990s</h2>
+                    <h2>Life After Bird</h2>
+                    <span><h3>Click for Info</h3></span>
+                    <p id="info5">Certainly, one of the bleaker eras of the Boston Celtics timeline, Boston saw two potential superstars pass away unexpectedly during their time in Boston. 2nd overall draft pick in 1986 Len Bias, and 22nd pick in 1987 Reggie Lewis were supposed to take over the reigns as Larry Bird grew older but were never able to see that potential fulfilled. The Celtics reeled, only making 3 playoff appearances the entire decade, alongside a stretch of 7 straight losing seasons and 6 straight seasons without making the postseason, all franchise worsts in their regard. The only bright spot of this decade would come late when the Celtics were able to draft stars Antoine Walker in 1996 and Paul Pierce in 1998. Both would go on to make numerous all-star appearances for the organization, but only one would go on to be a part of…</p>
+                </div>
+            </div>
+            <div class="decade-row" onclick="showInfo6()">
+                <div class="decade-text">
+                    <h2>2000s</h2>
+                    <h2>The Big 3</h2>
+                    <span><h3>Click for Info</h3></span>
+                    <p id="info6">Danny Ainge took over as general manager in 2003 and took his role seriously. Ainge put together a solid collection of draft talent in Jeff Green, Gerald Green, and Al Jefferson, as well as getting a solid amount of trade pieces in Wally Szczerbiak and Ricky Davis, but this was all to put together what is known as one of the first super-teams around budding superstar Paul Pierce and rising star point guard Rajon Rondo. In the summer of 2007, Ainge traded for Kevin Garnett and Ray Allen, going all-in on winning the championship. Coached by Doc Rivers, the Celtics pulled out of their recent struggles to win the 2008 NBA title in the Big 3’s first season together. Boasting one of the best defenses of all time, the Big 3 would go on to make another finals run in 2010 and multiple strong playoff pushes albeit never resulting in another championship. The Lakers rivalry continued, this time against legendary Kobe Bryant, and new rivalries began to brew with the Bad Boy Pistons and new face of the league LeBron James.</p>
+                </div>
+            </div>
+            <div class="decade-row" onclick="showInfo7()">
+                <div class="decade-text">
+                    <h2>2010s</h2>
+                    <h2>Out with the Old, In with the New</h2>
+                    <span><h3>Click for Info</h3></span>
+                    <p id="info7">As Pierce and Garnett grew older and Ray Allen left to join the Miami Heat alongside rival LeBron James, the Celtics Big 3 era dissipated, and it was clear it was time to move on. The Celtics would trade Pierce and Garnett to the Brooklyn Nets in exchange for a plethora of draft picks, which at the time was seen as a massive steal by Brooklyn. Well, the Nets would go on to win just one playoff series with the pieces they acquired, and the Celtics looked to rebuild. Despite going through a stretch of mediocre teams, the Celtics began quickly building playoff caliber teams, and with the help of young talent like Isaiah Thomas, Marcus Smart, Avery Bradley, and Jae Crowder were able to cultivate the winning culture under coach Brad Stevens. 20116-2018 marked the transition from rebuild to perennial contention, which saw prior top-5 MVP candidate Isaiah Thomas traded for star Kyrie Irving, and the signing of stars Al Horford and Gordon Hayward. The most exceptional part of this decade, however, is the draft picks from the Pierce and Garnett trade coming around and becoming Jaylen Brown and Jayson Tatum.</p>
+                </div>
+            </div>
+            <div class="decade-row" onclick="showInfo8()">
+                <div class="decade-text">
+                    <h2>2020s</h2>
+                    <h2>New Faces of the Franchise</h2>
+                    <span><h3>Click for Info</h3></span>
+                    <p id="info8">Brown and Tatum would lead the Celtics to numerous strong playoff runs and performances, making the ECF in 2018 in their first season together. To start off the 20s decade, they have already both made 3+ All-Star appearances (3 for Jaylen, 5 for Tatum) and both have received All-NBA selections. They have also managed to reach 4 Eastern Conference Finals as well as one NBA Finals. Coach-turned-GM Brad Stevens has worked hard to build around his superstars, trading back for Al Horford in 2021, 6th man of the year Malcolm Brogdon in 2022, and All-Stars Jrue Holiday and Kristaps Porzingis in the summer of 2023. What this core is able to achieve is yet to be seen, but the amount of talent around two superstars who have arguably not even reached their prime yet leaves a lot of success on the table for the Celtics going forward.</p>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
