@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <style>
+        nav {
+            margin-top: 25px;
+        }
+        a {
+            background-color: rgb(231, 231, 231);
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+        }
+        #open {
+            width: 40px;
+            display: none;
+        }
+        #close {
+            display: none;
+        }
+        @media only screen and (max-width: 800px) {
+            #open {
+                display: block;
+            }
+            a {
+                display: block;
+            }
+            #navlinks {
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 801px) {
+            #navlinks {
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        function showNav () {
+            document.getElementById("navlinks").style.display = "block";
+            document.getElementById("close").style.display = "block";
+        }
+        function hideNav () {
+            document.getElementById("navlinks").style.display = "none";
+            document.getElementById("close").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="hamburger-icon">
+        <p id="open" onclick="showNav()">Menu</p>
+        <p id="close" onclick="hideNav()">X</p>
+    </div>
+    <nav id="navlinks">
+        <a href="">About</a>
+        <a href="">Skills</a>
+        <a href="">Contact</a>
+    </nav>
+    <h1>Hamburger Menu</h1>
+    <h2>CSS</h2>
+        <ol>
+            <li>Large => NO Hamburger</li>
+            <li>Large => NO X-out</li>
+            <li>Large => Links SIDE by SIDE</li><br>
+            <li>Small => SHOW Hamburger</li>
+            <li>Small => SHOW X</li>
+            <li>Small => Links are STACKED</li>
+            <li>Small => Links initially HIDDEN</li>
+        </ol>
+    <h2>JavaScript</h2>
+        <ol>
+            <li>Click on hamburger to show links</li>
+            <li>Click on X to hide links</li>
+        </ol>
+</body>
+</html>
