@@ -134,3 +134,7 @@ svg{
 .skip:focus {
     left: 10px;
 }
+
+fieldset {
+    padding: 30px;
+}
