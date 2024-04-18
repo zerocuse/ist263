@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Zach's Contact Info</title>
+        <link rel="stylesheet" href="10lab.css">
+        <style>
+            @media only screen and (max-width: 800px) {
+                .row1, .row2 {
+                    flex-wrap: wrap;
+                }
+                .row2 {
+                    display: flex;
+                    overflow-x: scroll;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav><a href="#skip" class="skip">Skip To Content</a><a href="index.html">Home</a> <span>|</span> <a href="contact.html">Contact</a> <span>|</span> <a href="skills.html">Skills</a> </nav>
+        <h1>Contact</h1>
+        <main id="skip">
+        <section class="contactstart">
+        <div class="row1">
+            <div class="col1">
+                <h2>Address</h2>
+                <p>
+                Zachariah Grande<br>
+                207 W Harrison Avenue<br>
+                Royal Oak, MI 48067
+                </p>
+            </div>
+            <div class="col2">
+                <p>
+                    <a href="mailto:zmgrande@syr.edu">zmgrande@syr.edu</a>
+                 </p>
+                 <p>
+                    <a href="https://www.linkedin.com/in/zachariahmgrande-b58126290" target="_blank">MyLinkedIn Page<br><img src="../../images/Labs/lilogo-sized.png" alt="Clickable LinkedIn Logo"></a>
+                </p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="col1">
+                    <h2>Connect</h2>
+                    <form action="https://formspree.io/f/xjvnyzjn" method="post">
+                    <p><label for="name">What is your name?</label><br>
+                    <input type="text" id="name" name="name" value =""></p>
+                    <p>Are you a Syracuse University student?<br>
+                    <input type="radio" id="syracuseyes" name="syracuseyesno" value="yes"><label for="syracuseyes"> Yes</label><input type="radio" id="syracuseno" name="syracuseyesno" value="no"><label for="syracuseno"> No</label></p>
+                    <p><label for="school">If so, what is your home college?</label><br>
+                    <textarea id="school" name="homecollege" rows="2" cols="30"></textarea><br></p>
+                    <p><label for="email">Please enter your email:</label><br>
+                    <input type="text" id="email" name="email" value =""></p>
+                    <p><input type="submit" value="Send Info"></p></form>
+            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.523453286483!2d-83.14800082373104!3d42.480423027488705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824cf3e4e36cdf3%3A0x92842269694fef05!2s207%20W%20Harrison%20Ave%2C%20Royal%20Oak%2C%20MI%2048067!5e0!3m2!1sen!2sus!4v1706805167070!5m2!1sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+        </main>
+    </body>
+</html>

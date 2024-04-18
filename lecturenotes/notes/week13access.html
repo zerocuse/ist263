@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .skip {
+            background-color: rgb(234, 234, 234);
+            padding: 5px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid black;
+            position: absolute;
+            left: -999px; 
+        }
+        .skip:focus {
+            left: 0px;
+        }
+        h1 {
+            display: none;
+        }
+    </style>
+    <script>
+        function showh1 () {
+            document.getElementById('h1').style.display = 'block'
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#skip" class="skip" onclick="showh1()" tabindex="1">Skip To Content</a><br>
+        <a href="http://www.amazon.com" tabindex="2">Amazon</a><br>
+        <a href="http://www.google.com" tabindex="3">Google</a><br>
+        <a href="http://www.ebay.com" tabindex="4">Ebay</a>
+    </nav>
+    
+    <h1 id="h1">All the Accessibility Techniques</h1>
+
+    <p id="skip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptate dolore, esse nihil at quis neque dolorum dignissimos consectetur ipsam ex illo. Inventore odit pariatur distinctio eaque magni et cum.</p>
+</body>
+</html>
