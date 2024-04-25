@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .whitespace {
@@ -126,14 +126,15 @@ header nav, header h1 {
     text-align: center;
 }
 
-.decade-row h2:nth-child(2), .decade-row-even h2:nth-child(2) {
+.decade-row h2:nth-child(2){
     text-transform: uppercase;
     font-weight: 700;
     color: darkgreen;
     margin: 5px 0 10px 0;
 }
 
-.decade-row h2:nth-child(1), .decade-row-even h2:nth-child(1) {
+.decade-row h2:nth-child(1){
+    color: darkgreen;
     font-weight: 200;
 }
 
