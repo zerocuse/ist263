@@ -101,6 +101,14 @@ header nav, header h1 {
     background-image: linear-gradient(0deg, rgba(4, 101, 25, 0.5), rgba(4, 101, 25, 0.5)), url(Website-Images/jaylenBrown.jpg);
 }
 
+.wrapper {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .decade-row {
     display: flex;
     justify-content: center;
