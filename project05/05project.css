@@ -35,10 +35,6 @@ h1 {
     font-weight: 400;
 }
 
-h2 {
-    text-align: center;
-}
-
 html {
     scroll-snap-type: y mandatory;
 }
@@ -238,6 +234,10 @@ h4, .accolades {
 .pics-flex-coaches img {
     width: 25%;
     transition: 300ms;
+}
+
+.pics-flex, .pics-flex-coaches {
+    margin-bottom: 20px;
 }
 
 .icons img:hover {
