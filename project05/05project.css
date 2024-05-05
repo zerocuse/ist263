@@ -161,12 +161,13 @@ header nav, header h1 {
     }
 }
 
-.icons h2 {
+.icons h2, .roster h2 {
     color: rgb(32, 97, 32);
     font-weight: 200;
     padding: 20px;
     scale: 1.5;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .title-flex {
@@ -242,4 +243,81 @@ h4, .accolades {
 
 .icons img:hover {
     scale: 1.15;
+}
+
+.starter, .benchwarmer {
+    display: flex;
+    transition: 300ms;
+    padding: 15px;
+    align-items: center;
+}
+
+.starter:hover {
+    scale: 1.015;
+    background-color: rgb(32, 97, 32);
+    color: #fff;
+}
+
+.starter:hover h3, .starter:hover .position{
+    color: #fff;
+}
+
+.benchwarmer:hover {
+    scale: 1.015;
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 97, 32);
+}
+
+.benchwarmer:hover h3, .benchwarmer:hover .position{
+    color: rgb(32, 97, 32);
+}
+
+.starter img, .benchwarmer img {
+    height: 20%;
+    width: 40%;
+    padding-right: 20px;
+}
+
+.position, .starter h3 {
+    text-align: center;
+    color: rgb(32, 97, 32);
+}
+
+.bench {
+    background-color: rgb(32, 97, 32);
+    color: #fff;
+    margin: 20px 0 0 0
+}
+
+.executives {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+}
+
+.starters h3, .executives h3 {
+    font-size: 200%;
+}
+
+.bench h2, .bench .position {
+    color: #fff;
+}
+
+.bench h3 {
+    color: #fff;
+    font-size: 200%;
+    text-align: center;
+}
+
+.roster h4 {
+    font-weight: 600;
+    font-size: large;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.executives p {
+    font-weight: 200;
+    font-variant: small-caps;
+    text-transform: uppercase;
 }
