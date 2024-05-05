@@ -10,10 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
-        main img {width: 100px; border-radius: 10px;}
+        @media only screen and (max-width: 600px) {
+            .accolades, .title-flex {
+                display: none;
+            }
+        }
     </style>
 </head>
-<body>
+<body class="icons">
     <header>
         <div class="subheader">
             <nav>
@@ -29,141 +33,225 @@
 
     <main id="skip">
         <h2>Coaches</h2>
+        <div class="pics-flex-coaches">
+            <img src="Website-Images/redAuerbach.jpeg" alt="Red Auerbach Cigar">
+            <img src="Website-Images/tomHeinsohn.jpg" alt="Tommy Heinsohn">
+            <img src="Website-Images/bradStevens.jpg" alt="Brad Stevens">
+            <img src="Website-Images/joeMazzula.png" alt="Joe Mazzula with Jayson Tatum">
+        </div>
+        <div class="title-flex">
+            <p>Coach</p>
+            <p>Accolades (Franchise Rank)</p>
+        </div>
         <div class="coaches-flex">
-            <div class="pic-col">
-                <img src="Website-Images/redAuerbach.jpeg" alt="Red Auerbach Cigar">
-                <img src="Website-Images/tomHeinsohn.jpg" alt="Tommy Heinsohn">
-                <img src="Website-Images/bradStevens.jpg" alt="Brad Stevens">
-                <img src="Website-Images/joeMazzula.png" alt="Joe Mazzula with Jayson Tatum">
-            </div>
-            <div class="bios-col">
-                <div class="coach">
-                    <h4>Red Auerbach<br>1950-1966</h4>
-                    <p>Known as one of the most legendary coaches of all time, Red may not have been the first coach in Celtics history but he is very much the most notable and iconic coach in franchise history. Coaching 16 seasons for the Celtics, Red was a part of 9 NBA championships and served to represent a baseline of success for the franchise as it grew to what it is today.</p>
+            <div class="coach">
+                <div class="bio">
+                    <h4>Red Auerbach [1950-1966]</h4>
+                    <p>Red may not have been the first coach in Celtics history but he is very much the most notable and iconic coach in franchise history. Known as one of the most legendary coaches of all time, Red coached 16 seasons for the Celtics and was a part of 9 NBA championships. Red served to represent a baseline of success for the franchise as it grew to what it is today.</p>
                 </div>
-                <div class="coach">
-                    <h4>Bill Russell<br>1966-1969</h4>
+                <div class="accolades">
+                    <p>1,192 Games (1st)<br>66.7 Win% (4th)<br>9 NBA Championships (1st)</p>
+                </div>
+            </div>
+            <div class="coach">
+                <div class="bio">
+                    <h4>Bill Russell [1966-1969]</h4>
                     <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
                 </div>
-                <div class="coach">
-                    <h4>Tommy Heinsohn<br>1969-1978</h4>
+                <div class="accolades">
+                    <p>245 Games (8th)<br>66.1 Win%  (5th)<br>2 NBA Championships (2nd)</p>
+                </div>
+            </div>
+            <div class="coach">
+                <div class="bio">
+                    <h4>Tommy Heinsohn [1969-1978]</h4>
                     <p>After a successful NBA playing career with the team spanning 9 seasons, Heinsohn would go on to serve another 9 seasons as the Celtics head coach starting in 1969. Winning 427 out of his 690 games, Tommy’s teams reigned in two NBA championships during his tenure. After his coaching career, Heinsohn would become a color commentator for the Celtics all the way until 2020, marking 63 years as a part of the franchise.</p>
                 </div>
-                <div class="coach">
-                    <h4>Bill Fitch<br>1979-1983</h4>
+                <div class="accolades">
+                    <p>690 Games (3rd)<br>61.9 Win% (7th)<br>2 NBA Championships (2nd)</p>
+                </div>
+            </div>
+            <div class="coach">
+                <div class="bio">
+                    <h4>Bill Fitch [1979-1983]</h4>
                     <p>Fitch coached in the NBA for 25 years, 4 of them being with the Celtics in the early 80s. This proved a great honor, as he would win 242 out of 328 games, the second best winning percentage in franchise history, an NBA title, and would later be named one of the 10 Greatest Coaches of All Time by the NBA.</p>
                 </div>
-                <div class="coach">
-                    <h4>KC Jones<br>1983-1988</h4>
+                <div class="accolades">
+                    <p>328 Games (7th)<br>73.8 Win% (3rd)<br>1 NBA Championship (5th)</p>
+                </div>
+            </div>
+            <div class="coach">
+                <div class="bio">
+                    <h4>KC Jones [1983-1988]</h4>
                     <p>Another all-time Celtic great that turned to coaching, Jones coached for 11 seasons in Boston, 5 of those being as a head coach. Boasting the best win% in franchise history along with two titles, Jones is one of the most decorated Celtics across his playing and coaching careers.</p>
                 </div>
-                <div class="coach">
-                    <h4>Doc Rivers<br>2005-2013</h4>
+                <div class="accolades">
+                    <p>410 Games (6th)<br>75.1 Win% (1st)<br>2 NBA Championships (2nd)</p>
+                </div>
+            </div>
+            <div class="coach">
+                <div class="bio">
+                    <h4>Doc Rivers [2005-2013]</h4>
                     <p>Doc Rivers took over in 2005 after a couple of unfulfilling playoff runs to start the 2000s. He would go on to coach for essentially a decade for the Celtics, notably being the coach behind the Celtics Big 3 and 2008 championship run. With the 2nd most games as a coach, Rivers made the playoffs in 6 of his 8 seasons, a great accomplishment in the modern age of basketball.</p>
                 </div>
-                <div class="coach">
-                    <h4>Brad Stevens<br>2013-2021</h4>
+                <div class="accolades">
+                    <p>721 Games (2nd)<br>57.7 Win% (8th)<br>1 NBA Championship (5th)</p>
+
+                </div>
+            </div>
+            <div class="coach">
+                <div class="bio">
+                    <h4>Brad Stevens [2013-2021]</h4>
                     <p>When Doc Rivers refused to coach a “rebuilding” team, Brad Stevens from Butler stepped up and turned a 25-win team into a perennial playoff appearance. Stevens is known for being one of the smartest head coaches of the modern era of basketball, specifically on the defensive end, and leading teams with subpar talent to unparalleled success. Despite never catching an NBA title, Stevens was crucial to turning around the Celtics organization in the mid-2010s and developing the current stars of the team before being promoted to President of Basketball Operations in 2021.</p>
                 </div>
-                <div class="coach">
-                    <h4>Joe Mazzulla<br>2022-Current</h4>
+                <div class="accolades">
+                    <p>630 Games (4th)<br>55.6 Win% (10th)<br>38 Playoff Wins (5th)</p>
+                </div>
+            </div>
+            <div class="coach">
+                <div class="bio">
+                    <h4>Joe Mazzulla [2022-Current]</h4>
                     <p>The current coach of the Celtics, Mazzulla had the luxury of inheriting a great team and improving them to elite. Winning 97 of his 134 games at the time of this writing, Mazzulla is continuing to prove that his success as a coach is deserved and is looking to maintain his culture of winning as the Celtics fight for an elusive championship.</p>
                 </div>
-            </div>
-            <div class="accolades-col">
-                <h4>Accolades (Franchise Rank)</h4>
-                <p>1,192 Games (1st) | 66.7 Win% (4th) | 9 NBA Championships (1st)</p>
-                <p>245 Games (8th) | 66.1 Win%  (5th) | 2 NBA Championships (2nd)</p>
-                <p>690 Games (3rd) | 61.9 Win% (7th) | 2 NBA Championships (2nd)</p>
-                <p>328 Games (7th) | 73.8 Win% (2nd) | 1 NBA Championship (5th)</p>
-                <p>410 Games (6th) | 75.1 Win% (1st) | 2 NBA Championships (2nd)</p>
-                <p>721 Games (2nd) | 57.7 Win% (8th) | 1 NBA Championship (5th)</p>
-                <p>630 Games (4th) | 55.6 Win% (10th) | 38 Playoff Wins (5th)</p>
-                <p>134 Games (13th) | 72.4 Win% (3rd) | 120.1 Offensive RTG (1st)</p>
+                <div class="accolades">
+                    <p>164 Games (11th)<br>73.8 Win% (2nd)<br>120.5 Offensive RTG (1st)</p>
+                </div>
             </div>
         </div>
-        <hr>
         <h2>Players</h2>
+        <div class="pics-flex">
+            <div class="pic"><img src="Website-Images/bobCousy.jpeg" alt="Bob Cousy"></div>
+            <div class="pic"><img src="Website-Images/billRussell.jpg" alt="Bill Russell"></div>
+            <div class="pic"><img src="Website-Images/robertParish.jpg" alt="Robert Parish"></div>
+            <div class="pic"><img src="Website-Images/larryBird.jpg" alt="Larry Bird and Magic Johnson"></div>
+            <div class="pic"><img src="Website-Images/paulPierce.JPG" alt="Paul Pierce"></div>
+            <div class="pic"><img src="Website-Images/kevinGarnett.jpg" alt="Kevin Garnett"></div>
+            <div class="pic"><img src="Website-Images/rajonRondo.jpg" alt="Rajon Rondo"></div>
+            <div class="pic"><img src="Website-Images/jaysonTatum.jpg" alt="Jayson Tatum"></div>
+        </div>
+        <div class="title-flex">
+            <p>Player</p>
+            <p>Accolades (Franchise Rank)</p>
+        </div>
         <div class="players-flex">
-            <div class="pic-col">
-                <img src="Website-Images/bobCousy.jpeg" alt="Bob Cousy">
-                <img src="Website-Images/billRussell.jpg" alt="Bill Russell">
-                <img src="Website-Images/robertParish.jpg" alt="Robert Parish">
-                <img src="Website-Images/larryBird.jpg" alt="Larry Bird and Magic Johnson">
-                <img src="Website-Images/paulPierce.JPG" alt="Paul Pierce">
-                <img src="Website-Images/kevinGarnett.jpg" alt="Kevin Garnett">
-                <img src="Website-Images/rajonRondo.jpg" alt="Rajon Rondo">
-                <img src="Website-Images/jaysonTatum.jpg" alt="Jayson Tatum">
-            </div>
-            <div class="bios-col">
-                <div class="player">
-                    <h4>Bob Cousy<br>1950-1963</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
+            <div class="player">
+                <div class="bio">
+                    <h4>Bob Cousy [1950-1963]</h4>
+                    <p>Cousy was there for the very beginning of the Celtics franchise, an innovative point guard in the early years of the NBA. He was the blueprint for ball-handling of his era, and his play led him to a franchise-leading 10 All-NBA first teams and 6 championships alongside Bill Russell. He would have his #14 retired by the Celtics in 1963.</p>                
                 </div>
-                <div class="player">
-                    <h4>Bill Russell<br>1966-1969</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Tommy Heinsohn<br>1957-1965</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Sam Jones<br>1957-1969</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>John Havlicek<br>1962-1978</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Robert Parish<br>1980-1994</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Larry Bird<br>1979-1992</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Kevin McHale<br>1981-1993</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Paul Pierce<br>1998-2013</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Kevin Garnett<br>2007-2013</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Rajon Rondo<br>2006-2015</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Isaiah Thomas<br>2014-2017</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
-                </div>
-                <div class="player">
-                    <h4>Jayson Tatum<br>2017-Present</h4>
-                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>
+                <div class="accolades">
+                    <p>917 Games<br>1x MVP<br>13x All-Star (1st)<br>10x All-NBA 1st Team (1st)<br>6x Champion (8th)</p>
                 </div>
             </div>
-            <div class="accolades-col">
-                <h4>Accolades (Franchise Rank)</h4>
-                <p>917 Games | 1x MVP | 13x All-Star (1st) | 10x All-NBA 1st Team (1st) | 6x Champion (8th)</p>
-                <p>963 Games (5th) | 12x All-Star (3rd) | 5x MVP | 3x All-NBA 1st Team (5th) | 1x All-Defensive 1st Team | 11x Champion (1st)</p>
-                <p>654 Games | 6x All-Star | 4x All-NBA 2nd Team | 8x Champion (3rd)</p>
-                <p>871 Games | 5x All Star | 3x All-NBA 2nd Team | 10x Champion (2nd)</p>
-                <p>1270 Games (1st) | 13x All-Star (1st)| 4x All-NBA 1st Team (3rd) | 5x All-Defensive 1st Team | 8x Champion (3rd)</p>
-                <p>1106 Games (2nd) | 9x All-Star (5th) | 1x All-NBA 2nd Team | 3x Champion</p>
-                <p>897 Games | 12x All-Star (3rd) | 3x MVP | 9x All-NBA 1st Team (2nd) | 3x Champ</p>
-                <p>971 Games (4th) | 7x All-Star | 2x 6MOY | 1x All-NBA 1st Team| 3x All-Defensive 1st Team | 3x Champion</p>
-                <p>1102 Games (3rd) | 10x All-Star (4th) | 1x All-NBA 2nd Team | 1x Champion</p>
-                <p>396 Games | 5x All-Star | 1x All-NBA 1st Team | 3x All-Defensive 1st Team | 1x DPOY | 1x Champion</p>
-                <p>527 Games | 4x All-Star | 1x All-NBA 3rd Team | 2x All-Defensive 1st Team | 1x Champion</p>
-                <p>179 Games | 2x All-Star | 1x All-NBA 2nd Team | 28.9 PPG Season (3rd)</p>
-                <p>488 Games | 5x All-Star | 3x All-NBA 1st Team (5th) | 30.1 PPG Season (1st)</p>
+            <div class="player">
+                <div class="bio">
+                    <h4>Bill Russell [1966-1969]</h4>
+                    <p>One of two player-coaches (the other Dave Cowens), Bill Russell proved a mastermind defensive coordinator and anchor. Through his 3 seasons, he won 162 games and won 2 NBA Championships, a feat that would never be replicated by a player-coach and likely never will as the tradition has grown out of the game today.</p>                        
+                </div>
+                <div class="accolades">
+                    <p>963 Games (5th)<br>12x All-Star (3rd)<br>5x MVP<br>3x All-NBA 1st Team (5th)<br>1x All-Defensive 1st Team<br>11x Champion (1st)</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="bio">
+                    <h4>Tommy Heinsohn [1957-1965]</h4>
+                    <p>An energetic and loud player, Heinsohn made his impact on the Celtics in 3 different forms. Heinsohn was a physical player, smart coach, and colorful announcer in his long and infamous career with the Celtics. A part of 8 Championships, Heinsohn played a critical role in making the Celtics franchise a dynasty and had his #15 retired by the organization in 1966.</p>
+                </div>
+                <div class="accolades">
+                    <p>654 Games<br>6x All-Star<br>4x All-NBA 2nd Team<br>8x Champion (3rd)</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="bio">
+                    <h4>Sam Jones [1957-1969]</h4>
+                    <p>Most well-known for having the 2nd most championships in NBA history, Sam Jones was a prolific scoring shooting guard for the Celtics in the sixties, with an almost modern jumper that is credited for being ahead of his time. Given the nicknames “Winner”, “Gentleman”, and “Mr. Clutch”, Same Jones cemented his place in NBA and Celtics history with valuable contributions to a plethora of championship runs and had his #24 retired in 1969.</p>
+                </div>
+                <div class="accolades">
+                    <p>871 Games<br>5x All Star<br>3x All-NBA 2nd Team<br>10x Champion (2nd)</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="bio">
+                    <h4>John Havlicek [1962-1978]</h4>
+                    <p>Another cog in the machine for Bill Russell’s Celtics was John Havlicek, a clutch shooting guard and small forward for the team in the 60s and 70s who was known for his ability to read offenses and defenses at a high level with unmatchable energy on each end. He would have his #17 retired soon after his basketball retirement.</p>                
+                </div>
+                <div class="accolades">
+                    <p>1270 Games (1st)<br>13x All-Star (1st)| 4x All-NBA 1st Team (3rd)<br>5x All-Defensive 1st Team<br>8x Champion (3rd)</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="bio">
+                    <h4>Robert Parish [1980-1994]</h4>
+                    <p>The Center with the second most games played for the franchise, Parish was known for his durability and defensive ability throughout his lengthy career. Nicknamed the Chief, he would spend 21 years in the NBA and be a part of three Celtics championships and would have his 00 retired by the franchise in 1998. </p>                 
+                </div>
+                <div class="accolades">
+                    <p>1106 Games (2nd)<br>9x All-Star (5th)<br>1x All-NBA 2nd Team<br>3x Champion</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="bio">
+                    <h4>Larry Bird [1979-1992]</h4>
+                    <p>Often debated with Russell as the best Celtic of all time, Larry Bird has become a face of the franchise even after his retirement. One of the highest basketball IQs and shooting strokes of all time, Larry used his size and smarts to dominate the league and winning 3 straight MVPs in the 80s along with 3 championships (and 3 finals MVPS). The 6th overall pick in 1979 would have his #33 retired in 1993.</p>                     
+                </div>
+                <div class="accolades">
+                    <p>897 Games<br>12x All-Star (3rd)<br>3x MVP<br>9x All-NBA 1st Team (2nd)<br>3x Champ</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="pic"></div>
+                <div class="bio">
+                    <h4>Kevin McHale [1981-1993]</h4>
+                    <p>A dominant power forward for the Celtics standing at 6’10, McHale was the perfect complimentary frontcourt piece to Larry Bird during the Celtics 3 championship runs in the 80s. McHale’s #32 would go on to be retired in 1994 and would continue to make his mark in the NBA by becoming a head coach for numerous teams before his final retirement.</p>
+                </div>
+                <div class="accolades">
+                    <p>971 Games (4th)<br>7x All-Star<br>2x 6MOY<br>1x All-NBA 1st Team| 3x All-Defensive 1st Team<br>3x Champion</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="bio">
+                    <h4>Paul Pierce [1998-2013]</h4>
+                    <p>A homegrown superstar, Pierce came into a rebuilding Celtics team that was finally starting to slow down after multiple dynasties. Pierce was a constant of a team trying to find a winning strategy for nearly a decade before finally figuring it out in 2008, when Pierce would win the Finals MVP award in an entertaining finals matchup against Kobe Bryant’s Lakers. Pierce, one of the best scorers in Celtics history, would be traded for the draft pick that would end up becoming Jayson Tatum, allowing him to help the team even after his departure. #36 would be retired in Pierce’s honor in 2018. </p>
+                </div>
+                <div class="accolades">
+                    <p>1102 Games (3rd)<br>10x All-Star (4th)<br>1x All-NBA 2nd Team<br>1x Champion</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="bio">
+                    <h4>Kevin Garnett [2007-2013]</h4>
+                    <p>A defensive menace, Garnett was acquired in 2007 in a trade with the Minnesota Timberwolves, and immediately showed his impact by winning the 2008 Defensive Player of the Year and leading the Celtics to a championship in his first year with the team. His #5 would go on to be retired by the team in 2022.</p>
+                </div>
+                <div class="accolades">
+                    <p>396 Games<br>5x All-Star<br>1x All-NBA 1st Team<br>3x All-Defensive 1st Team<br>1x DPOY<br>1x Champion</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="bio">
+                    <h4>Rajon Rondo [2006-2015]</h4>
+                    <p>Despite not being included in the “Big 3” name, Rondo was a crucial component of one of the league’s best offenses at the time and is widely considered one of the best passers of all time, and holds many assist records.</p>
+                </div>
+                <div class="accolades">
+                    <p>527 Games<br>4x All-Star<br>1x All-NBA 3rd Team<br>2x All-Defensive 1st Team<br>1x Champion</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="pic"></div>
+                <div class="bio">
+                    <h4>Isaiah Thomas [2014-2017]</h4>
+                    <p>Isaiah Thomas’ story is a special one, and although his Celtic career was short, a 5’9 guard leading a team to the first seed in the Eastern Conference AND finishing 5th in MVP voting AND leading the league in fourth quarter scoring is worth being put in the history books.</p>
+                </div>
+                <div class="accolades">
+                    <p>179 Games<br>2x All-Star<br>1x All-NBA 2nd Team<br>28.9 PPG Season (3rd)</p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="bio">
+                    <h4>Jayson Tatum [2017-Present]</h4>
+                    <p>Since taking over as the undisputed first option in 2020, Tatum has put himself on track to becoming not only one of the most decorated Celtics of all time, but one of the most accomplished players in league history.</p>
+                </div>
+                <div class="accolades">
+                    <p>513 Games<br>5x All-Star<br>3x All-NBA 1st Team (5th)<br>30.1 PPG Season (1st)</p>
+                </div>
             </div>
         </div>
     </main>
